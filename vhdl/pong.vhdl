@@ -3,17 +3,21 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity pong_board is
-    Port ( clk : in std_logic;
-           reset : in std_logic;
-           start : in std_logic;
-           ball_x : in std_logic_vector(3 downto 0);
-           ball_y : in std_logic_vector(3 downto 0);
-           ball_dir : in std_logic_vector(1 downto 0);
-           player1 : in std_logic_vector(3 downto 0);
-           player2 : in std_logic_vector(3 downto 0);
-           score1 : out std_logic_vector(3 downto 0);
-           score2 : out std_logic_vector(3 downto 0);
-           led : out std_logic_vector(7 downto 0));
+    Port (
+        clk : in std_logic;
+        reset : in std_logic;
+        start : in std_logic;
+        ball_x : in std_logic_vector(3 downto 0);
+        ball_y : in std_logic_vector(3 downto 0);
+        ball_dir : in std_logic_vector(1 downto 0);
+        player1 : in std_logic_vector(3 downto 0);
+        player2 : in std_logic_vector(3 downto 0);
+        score1 : out std_logic_vector(3 downto 0);
+        score2 : out std_logic_vector(3 downto 0);
+        led : out std_logic_vector(7 downto 0);
+        hsync_out : out std_logic;
+        vsync_out : out std_logic
+    );
 end pong_board;
 
 architecture pong_game of pong_board is
@@ -26,10 +30,10 @@ architecture pong_game of pong_board is
     signal score1_reg : std_logic_vector(3 downto 0);
     signal score2_reg : std_logic_vector(3 downto 0);
     signal led_reg : std_logic_vector(7 downto 0);
-    signal clk : std_logic;
+    signal clk_signal : std_logic;
     signal hreset : std_logic;
-    signal hsync : std_logic;
-    signal vsync : std_logic;
+    signal hsync_signal : std_logic;
+    signal vsync_signal : std_logic;
 
     component hsync is
         Port (
@@ -37,28 +41,33 @@ architecture pong_game of pong_board is
             hreset : out std_logic;
             hsync : out std_logic
         );
-    end component hsync;
+    end component;
 
     component vsync is
         Port ( 
             clk : in std_logic;
             vsync : out std_logic
         );
-    end component vsync;
+    end component;
 
 begin
 
-    hsync : hsync
+    clk_signal <= clk;
+
+    hsync_inst : hsync
         Port map (
-            clk => clk, 
+            clk => clk_signal, 
             hreset => hreset, 
-            hsync => hsync
+            hsync => hsync_signal
         );
 
-    vsync : vsync
+    vsync_inst : vsync
         Port map (
             clk => reset, 
-            vsync => vsync
+            vsync => vsync_signal
         );
+
+    hsync_out <= hsync_signal;
+    vsync_out <= vsync_signal;
     
 end pong_game;
