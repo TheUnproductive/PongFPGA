@@ -21,13 +21,14 @@ begin
         if rising_edge(clk) then
             if hsync_count = "11111111" then
                 hsync_count <= (others => '0');
+                hsync <= '1';
+                hreset <= '1';
             else
                 hsync_count <= hsync_count + 1;
+                hsync <= '0';
+                hreset <= '0';
             end if;
         end if;
     end process;
-
-    hreset <= '1' when hsync_count = "00000000" else '0';
-    hsync <= '1' when hsync_count = "00000000" else '0';
 
 end sync;

@@ -1,34 +1,4 @@
 # Loading project Pong
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl failed with 8 errors.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 2 failed with 9 errors.
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl failed with 7 errors.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 2 failed with 8 errors.
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl failed with 9 errors.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 2 failed with 10 errors.
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl failed with 9 errors.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 2 failed with 10 errors.
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl was successful.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 1 failed with 1 error.
-# Compile of pong_tb.vhd failed with 1 errors.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl was successful.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 1 failed with 1 error.
 # Compile of pong_tb.vhd was successful.
 # Compile of hsync.vhdl was successful.
 # Compile of pong.vhdl was successful.
@@ -36,7 +6,7 @@
 # 4 compiles, 0 failed with no errors.
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 21:21:17 on Dec 23,2022
+# Start time: 21:40:47 on Dec 23,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -44,50 +14,8 @@ vsim work.testbench
 # Loading work.testbench(test)
 # ** Warning: (vsim-3473) Component instance "uut : pong" is not bound.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench File: Z:/git/PongFPGA/testbench/pong_tb.vhd
-quit -sim
-# End time: 21:21:48 on Dec 23,2022, Elapsed time: 0:00:31
-# Errors: 0, Warnings: 1
-# Compile of pong_tb.vhd was successful.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl was successful.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 0 failed with no errors.
-vsim work.testbench -t ns
-# vsim work.testbench -t ns 
-# Start time: 21:23:09 on Dec 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(test)
-# ** Warning: (vsim-3473) Component instance "uut : pong" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /testbench File: Z:/git/PongFPGA/testbench/pong_tb.vhd
 add wave -position insertpoint sim:/testbench/*
 run
 run
-# Compile of pong_tb.vhd was successful.
-# Compile of hsync.vhdl was successful.
-# Compile of pong.vhdl was successful.
-# Compile of vsync.vhdl was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -t ns work.testbench
-# End time: 21:24:42 on Dec 23,2022, Elapsed time: 0:01:33
-# Errors: 0, Warnings: 1
-# vsim -t ns work.testbench 
-# Start time: 21:24:43 on Dec 23,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(test)
-# ** Warning: (vsim-3473) Component instance "uut : pong" is not bound.
-#    Time: 0 ns  Iteration: 0  Instance: /testbench File: Z:/git/PongFPGA/testbench/pong_tb.vhd
-add wave -position insertpoint sim:/testbench/*
-run
-run
-run
-run
-run
-run
-# End time: 21:29:51 on Dec 23,2022, Elapsed time: 0:05:08
+# End time: 21:41:23 on Dec 23,2022, Elapsed time: 0:00:36
 # Errors: 0, Warnings: 1

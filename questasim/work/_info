@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/WINDOWS/system32
 Ehsync
-Z0 w1671825735
+Z0 w1671828026
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ V:C8QD7SHLz:e416Vd1=9^1
 !s100 YH9i0R`^lX8=LejNa4WSh2
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1671827074
+Z8 !s110 1671828037
 !i10b 1
-Z9 !s108 1671827074.000000
+Z9 !s108 1671828037.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/hsync.vhdl|
 Z11 !s107 Z:/git/PongFPGA/vhdl/hsync.vhdl|
 !i113 1
@@ -37,8 +37,8 @@ R3
 DEx4 work 5 hsync 0 22 :C8QD7SHLz:e416Vd1=9^1
 l17
 L13
-VNVWQIj=fz;27UB`4NIVkB1
-!s100 ^H5>oiiXlkVEPM>1zWIZ<3
+VfMHD?P=@bQG:^3m?F``5;2
+!s100 CoJBF1F8gI@aP062mKR0Z3
 R7
 32
 R8
@@ -63,9 +63,9 @@ VoC[C85HQ4Gc4[2SJm:d7k0
 !s100 zKGjegg6fKC17KVcjUMc33
 R7
 32
-Z17 !s110 1671827075
+Z17 !s110 1671828038
 !i10b 1
-Z18 !s108 1671827075.000000
+Z18 !s108 1671828038.000000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/pong.vhdl|
 Z20 !s107 Z:/git/PongFPGA/vhdl/pong.vhdl|
 !i113 1
