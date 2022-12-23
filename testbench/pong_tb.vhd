@@ -7,25 +7,25 @@ end testbench;
 
 architecture test of testbench is
 
-    signal clk : std_logic := '0';
-    signal hsync : std_logic := '0';
-    signal vsync : std_logic := '0';
+    signal clk : std_ulogic := '0';
+    signal hsync : std_ulogic;
+    signal vsync : std_ulogic;
 
     component pong is
         port(
-            clk : in std_logic;
-            reset : in std_logic;
-            start : in std_logic;
-            ball_x : out std_logic_vector(3 downto 0);
-            ball_y : out std_logic_vector(3 downto 0);
-            ball_dir : out std_logic_vector(1 downto 0);
-            player1 : out std_logic_vector(3 downto 0);
-            player2 : out std_logic_vector(3 downto 0);
-            score1 : out std_logic_vector(3 downto 0);
-            score2 : out std_logic_vector(3 downto 0);
-            led : out std_logic_vector(7 downto 0);
-            hsync_out : out std_logic;
-            vsync_out : out std_logic
+            clk : in std_ulogic;
+            reset : in std_ulogic;
+            start : in std_ulogic;
+            ball_x : out std_ulogic_vector(3 downto 0);
+            ball_y : out std_ulogic_vector(3 downto 0);
+            ball_dir : out std_ulogic_vector(1 downto 0);
+            player1 : out std_ulogic_vector(3 downto 0);
+            player2 : out std_ulogic_vector(3 downto 0);
+            score1 : out std_ulogic_vector(3 downto 0);
+            score2 : out std_ulogic_vector(3 downto 0);
+            led : out std_ulogic_vector(7 downto 0);
+            hsync_out : out std_ulogic;
+            vsync_out : out std_ulogic
         );
     end component;
 

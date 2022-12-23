@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 
 entity hsync is
     Port(
-        clk: in std_logic;
-        hsync: out std_logic;
-        hreset: out std_logic
+        clk: in std_ulogic;
+        hsync: out std_ulogic;
+        hreset: out std_ulogic
     );
 end hsync;
 
@@ -16,9 +16,11 @@ architecture sync of hsync is
 
 begin
 
+    hsync <= '0';
+
     process(clk)
     begin
-        if rising_edge(clk) then
+        if (clk = '1' and clk'event) then
             if hsync_count = "11111111" then
                 hsync_count <= (others => '0');
                 hsync <= '1';
