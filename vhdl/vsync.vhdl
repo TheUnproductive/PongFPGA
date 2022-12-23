@@ -11,11 +11,9 @@ end vsync;
 
 architecture sync of vsync is
 
-    signal vsync_count: unsigned(7 downto 0);
+    signal vsync_count: unsigned(7 downto 0) := (others => '0');
 
 begin
-
-    vsync <= '0';
     
     process(clk)
     begin

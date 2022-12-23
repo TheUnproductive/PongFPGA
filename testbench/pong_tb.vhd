@@ -14,16 +14,16 @@ architecture test of testbench is
     component pong is
         port(
             clk : in std_ulogic;
-            reset : in std_ulogic;
-            start : in std_ulogic;
-            ball_x : out std_ulogic_vector(3 downto 0);
-            ball_y : out std_ulogic_vector(3 downto 0);
-            ball_dir : out std_ulogic_vector(1 downto 0);
-            player1 : out std_ulogic_vector(3 downto 0);
-            player2 : out std_ulogic_vector(3 downto 0);
-            score1 : out std_ulogic_vector(3 downto 0);
-            score2 : out std_ulogic_vector(3 downto 0);
-            led : out std_ulogic_vector(7 downto 0);
+            -- reset : in std_ulogic;
+            -- start : in std_ulogic;
+            -- ball_x : out std_ulogic_vector(3 downto 0);
+            -- ball_y : out std_ulogic_vector(3 downto 0);
+            -- ball_dir : out std_ulogic_vector(1 downto 0);
+            -- player1 : out std_ulogic_vector(3 downto 0);
+            -- player2 : out std_ulogic_vector(3 downto 0);
+            -- score1 : out std_ulogic_vector(3 downto 0);
+            -- score2 : out std_ulogic_vector(3 downto 0);
+            -- led : out std_ulogic_vector(7 downto 0);
             hsync_out : out std_ulogic;
             vsync_out : out std_ulogic
         );
@@ -33,16 +33,16 @@ begin
 
     uut : pong port map(
         clk => clk,
-        reset => '0',
-        start => '0',
-        ball_x => open,
-        ball_y => open,
-        ball_dir => open,
-        player1 => open,
-        player2 => open,
-        score1 => open,
-        score2 => open,
-        led => open,
+        -- reset => '0',
+        -- start => '0',
+        -- ball_x => open,
+        -- ball_y => open,
+        -- ball_dir => open,
+        -- player1 => open,
+        -- player2 => open,
+        -- score1 => open,
+        -- score2 => open,
+        -- led => open,
         hsync_out => hsync,
         vsync_out => vsync
     );

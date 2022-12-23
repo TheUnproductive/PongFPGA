@@ -12,11 +12,9 @@ end hsync;
 
 architecture sync of hsync is
 
-    signal hsync_count: unsigned(7 downto 0);
+    signal hsync_count: unsigned(7 downto 0) := (others => '0');
 
 begin
-
-    hsync <= '0';
 
     process(clk)
     begin
