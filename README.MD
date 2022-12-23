@@ -7,6 +7,7 @@ This repository tries to implement the original Pong arcade game from scratch on
 - [ ] 1.1. The game should be playable on a VGA monitor
 - [ ] 1.2. The game should be playable with a joystick
 - [ ] 2.1. The target hardware is a [Terasic DE10-Lite](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021#contents) board
+- [ ] 2.2. Add a daughterboard to supply needed resistors, capacitors and bare transistors
 
 Implementation:
 - [X] 3.1. Hsync
