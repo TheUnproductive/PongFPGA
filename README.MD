@@ -33,7 +33,7 @@ I have included the original schematic for the Pong arcade game in this reposito
 
 ### 3.1. VGA
 
-The DE10-Lite board has a VGA port, which is why I decided to use it as a base.
+The DE10-Lite board has a VGA port, which is why I decided to use it as a base. Since the original arcade board used a Composite Video signal, I had to convert the video circuitry to VGA. The VGA port has the horizontal sync and vertical sync in common with the Composite Video signal, so I only needed to implement the red, green and blue signals.
 
 ### 3.2. Logic Design
 
