@@ -36,8 +36,8 @@ architecture pong_game of pong_board is
     component hsync is
         Port (
             clk : in std_ulogic;
-            hreset : out std_ulogic;
-            hsync : out std_ulogic
+            hsync : out std_ulogic;
+            hreset : out std_ulogic
         );
     end component;
 
