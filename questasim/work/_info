@@ -9,27 +9,27 @@ z2
 cModel Technology
 dC:/WINDOWS/system32
 Ehsync
-Z0 w1671829524
+Z0 w1671897821
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dZ:/git/PongFPGA/questasim
-Z5 8Z:/git/PongFPGA/vhdl/hsync.vhdl
-Z6 FZ:/git/PongFPGA/vhdl/hsync.vhdl
+Z4 dC:/Users/justu/Documents/GitHub/PongFPGA/questasim
+8C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/hsync.vhdl
+FC:/Users/justu/Documents/GitHub/PongFPGA/vhdl/hsync.vhdl
 l0
 L5
 VMV9g>kiPgdeH`8Na`i^<c2
 !s100 O_S0^o?f?F=mnlVQS_UMB0
-Z7 OV;C;10.5b;63
+Z5 OV;C;10.5b;63
 32
-Z8 !s110 1671829532
+!s110 1671971399
 !i10b 1
-Z9 !s108 1671829532.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/hsync.vhdl|
-Z11 !s107 Z:/git/PongFPGA/vhdl/hsync.vhdl|
+!s108 1671971399.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/hsync.vhdl|
+!s107 C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/hsync.vhdl|
 !i113 1
-Z12 o-work work -2002 -explicit
-Z13 tExplicit 1 CvgOpt 0
+Z6 o-work work -2002 -explicit
+Z7 tExplicit 1 CvgOpt 0
 Async
 R1
 R2
@@ -39,38 +39,41 @@ l17
 L13
 V7l6<dC>AbgKG`:Yh;PfiM0
 !s100 jYVM>l`5B0ceY0A3^^U6N0
-R7
+R5
 32
-R8
+!s110 1671829532
 !i10b 1
-R9
-R10
-R11
+!s108 1671829532.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/hsync.vhdl|
+!s107 Z:/git/PongFPGA/vhdl/hsync.vhdl|
 !i113 1
-R12
-R13
+R6
+R7
+dZ:/git/PongFPGA/questasim
+FZ:/git/PongFPGA/vhdl/hsync.vhdl
+8Z:/git/PongFPGA/vhdl/hsync.vhdl
 Epong_board
-Z14 w1671829437
+Z8 w1671971314
 R1
 R2
 R3
 R4
-Z15 8Z:/git/PongFPGA/vhdl/pong.vhdl
-Z16 FZ:/git/PongFPGA/vhdl/pong.vhdl
+Z9 8C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/pong.vhdl
+Z10 FC:/Users/justu/Documents/GitHub/PongFPGA/vhdl/pong.vhdl
 l0
 L5
 V6TjD?8^Xb1]6IG<Mg<0zz3
 !s100 2j9E2gg@?6FE3mU7N?n^o3
-R7
+R5
 32
-R8
+Z11 !s110 1671971385
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/pong.vhdl|
-Z18 !s107 Z:/git/PongFPGA/vhdl/pong.vhdl|
+Z12 !s108 1671971384.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/pong.vhdl|
+Z14 !s107 C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/pong.vhdl|
 !i113 1
-R12
-R13
+R6
+R7
 Apong_game
 R1
 R2
@@ -78,40 +81,79 @@ R3
 DEx4 work 10 pong_board 0 22 6TjD?8^Xb1]6IG<Mg<0zz3
 l51
 L23
-Vf2<c;87Z7_knm;z<@S5]H0
-!s100 ]2:FcakzD]PA3XNbE9AA52
-R7
+VO;AHNCE1nWnL5TTATZj:01
+!s100 :jE@6[B?260ZPRVJW4E2]3
+R5
 32
-R8
+R11
 !i10b 1
-R9
-R17
-R18
-!i113 1
 R12
 R13
+R14
+!i113 1
+R6
+R7
+Ers_ff
+Z15 w1671897555
+R2
+R3
+R4
+Z16 8C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/rs_ff.vhdl
+Z17 FC:/Users/justu/Documents/GitHub/PongFPGA/vhdl/rs_ff.vhdl
+l0
+L4
+VW96DGUTZ:41ImPF58MPQP3
+!s100 YaMYQ:4GZ2]oGGb7gN:2j0
+R5
+32
+R11
+!i10b 1
+Z18 !s108 1671971385.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/rs_ff.vhdl|
+Z20 !s107 C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/rs_ff.vhdl|
+!i113 1
+R6
+R7
+Arsff_arch
+R2
+R3
+DEx4 work 5 rs_ff 0 22 W96DGUTZ:41ImPF58MPQP3
+l16
+L12
+VMIDX]CCgKk[1TocB[2]kK1
+!s100 @M:7a^H2k;2nIZiSScBOK1
+R5
+32
+R11
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R6
+R7
 Etestbench
-Z19 w1671829463
+Z21 w1671841343
 R1
 R2
 R3
 R4
-Z20 8Z:/git/PongFPGA/testbench/pong_tb.vhd
-Z21 FZ:/git/PongFPGA/testbench/pong_tb.vhd
+Z22 8C:/Users/justu/Documents/GitHub/PongFPGA/testbench/pong_tb.vhd
+Z23 FC:/Users/justu/Documents/GitHub/PongFPGA/testbench/pong_tb.vhd
 l0
 L5
 V8UO<359bCNHKGYneH:?V13
 !s100 MTAB^bMb96MmMIUN@[1PY3
-R7
+R5
 32
-Z22 !s110 1671829531
+Z24 !s110 1671971384
 !i10b 1
-Z23 !s108 1671829531.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/testbench/pong_tb.vhd|
-Z25 !s107 Z:/git/PongFPGA/testbench/pong_tb.vhd|
-!i113 1
 R12
-R13
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/justu/Documents/GitHub/PongFPGA/testbench/pong_tb.vhd|
+Z26 !s107 C:/Users/justu/Documents/GitHub/PongFPGA/testbench/pong_tb.vhd|
+!i113 1
+R6
+R7
 Atest
 R1
 R2
@@ -121,38 +163,38 @@ l32
 L8
 V7TD;<ClmlF]di197859jc1
 !s100 YK;Im:X:8o88CJXYhf[`P0
-R7
+R5
 32
-R22
-!i10b 1
-R23
 R24
-R25
-!i113 1
+!i10b 1
 R12
-R13
+R25
+R26
+!i113 1
+R6
+R7
 Evsync
-Z26 w1671829530
+R21
 R1
 R2
 R3
 R4
-Z27 8Z:/git/PongFPGA/vhdl/vsync.vhdl
-Z28 FZ:/git/PongFPGA/vhdl/vsync.vhdl
+Z27 8C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/vsync.vhdl
+Z28 FC:/Users/justu/Documents/GitHub/PongFPGA/vhdl/vsync.vhdl
 l0
 L5
 VY3@f<Gzhjd@:CQG6776eR3
 !s100 >l3:h;M;E?cQVU:H]PBF62
-R7
+R5
 32
-R8
+R24
 !i10b 1
-R9
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|Z:/git/PongFPGA/vhdl/vsync.vhdl|
-Z30 !s107 Z:/git/PongFPGA/vhdl/vsync.vhdl|
-!i113 1
 R12
-R13
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/vsync.vhdl|
+Z30 !s107 C:/Users/justu/Documents/GitHub/PongFPGA/vhdl/vsync.vhdl|
+!i113 1
+R6
+R7
 Async
 R1
 R2
@@ -162,13 +204,13 @@ l16
 L12
 V==Yn5Y3honAPMU[OMmVd12
 !s100 2oJ4hQ50MFY@mN`AL`ZMA2
-R7
+R5
 32
-R8
+R24
 !i10b 1
-R9
+R12
 R29
 R30
 !i113 1
-R12
-R13
+R6
+R7
