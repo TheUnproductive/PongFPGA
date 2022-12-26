@@ -1,37 +1,34 @@
 library ieee;
-use ieee.std_logic_1164.all;
+use ieee. std_logic_1164.all;
+use ieee. std_logic_arith.all;
+use ieee. std_logic_unsigned.all;
 
-entity RS_FF is
-    port (
-        r,s : in std_ulogic;
-        Q: out std_ulogic;
-        Qnot : out std_ulogic
+entity rs_ff is
+    PORT(
+        s,r,clk: in std_logic;
+        Q, Qnot: out std_logic
     );
-end RS_FF;
+end rs_ff;
 
-architecture RSFF_arch of RS_FF is
-    
-    signal t1,t2 : std_ulogic;
+Architecture behavioral of rs_ff is
 
 begin
-    
-    t1 <= r nor t2;
-    t2 <= s nor t1;
-    
-    process (r,s)  
+
+    PROCESS(clk)
+    variable tmp: std_logic;
     begin
-        if(r='0' and s='0') then
-            Q <=t1;
-            Qnot <= t2;
-        elsif(r='0' and s='1') then
-            Q <='1';
-            Qnot <='0';
-        elsif(r='1' and s='0') then
-            Q <='0';
-            Qnot <='1';
-        elsif(r='1' and s='1') then
-            Q <='X';
-            Qnot <='X';
+        if(clk='1' and clk'EVENT) then
+            if(s='0' and r='0')then
+                tmp:=tmp;
+            elsif(s='1' and r='1')then
+                tmp:='X';
+            elsif(s='0' and r='1')then
+                tmp:='0';
+            else
+                tmp:='1';
+            end if;
         end if;
-    end process;
-end RSFF_arch;
+        Q <= tmp;
+        Qnot <= not tmp;
+    end PROCESS;
+end behavioral;

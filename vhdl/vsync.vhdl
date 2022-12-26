@@ -77,7 +77,7 @@ begin
 
     counter2 : counter
     Port map(
-        clk => clk_signal,
+        clk => vsync_count_reg(3),
         reset => vreset_signal,
         count => vsync_count_reg(7 downto 4)
     );

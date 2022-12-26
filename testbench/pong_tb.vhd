@@ -16,6 +16,8 @@ architecture testbench of pong_tb is
     signal hblanking : std_ulogic;
     signal hblanking_n : std_ulogic;
 
+    signal vsync_count : std_ulogic_vector(8 downto 0);
+
     component pong is
         port(
             clk : in std_ulogic;
@@ -27,7 +29,7 @@ architecture testbench of pong_tb is
     component hsync is
         port(
             clk : in std_ulogic;
-            hsync_out : out std_ulogic;
+            hsync_n_out : out std_ulogic;
             hreset_out : out std_ulogic;
             hreset_n_out : out std_ulogic;
             hblanking : out std_ulogic;
@@ -59,7 +61,7 @@ begin
     hsync_test : hsync 
     port map(
         clk => clk,
-        hsync_out => hsync_tb,
+        hsync_n_out => hsync_tb,
         hreset_out => hreset_tb,
         hreset_n_out => open,
         hblanking => hblanking,
@@ -75,7 +77,7 @@ begin
         vreset_n_out => open,
         vblanking => open,
         vblanking_n => open,
-        vsync_count => open
+        vsync_count => vsync_count
     );
 
     clk_process : process

@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity hsync is
     Port(
         clk : in std_ulogic;
-        hsync_out : out std_ulogic;
+        hsync_n_out : out std_ulogic;
         hreset_out : out std_ulogic;
         hreset_n_out : out std_ulogic;
         hblanking : out std_ulogic;
@@ -18,11 +18,13 @@ architecture hsync_gen of hsync is
 
     signal hsync_count_reg : std_ulogic_vector(8 downto 0);
     signal clk_signal : std_ulogic;
-    signal hsync_signal : std_ulogic;
+    signal hsync_n_signal : std_ulogic;
     signal hreset_signal : std_ulogic;
     signal hreset_n_signal : std_ulogic;
-    signal hblanking_signal : std_ulogic;
-    signal hblanking_n_signal : std_ulogic;
+    signal hblanking_signal : std_ulogic := '0';
+    signal hblanking_n_signal : std_ulogic := '1';
+
+    signal hsync_signal : std_ulogic;
 
     component counter is
     Port(
@@ -52,16 +54,25 @@ architecture hsync_gen of hsync is
         );
     end component;
 
+    component rs_ff is
+    Port(
+        clk,r,s : in std_ulogic;
+        Q: out std_ulogic;
+        Qnot : out std_ulogic
+    );
+    end component;
+
     signal reset_flipflop_data : std_ulogic;
     signal hblanking_n_data : std_ulogic;
     signal hblanking_data : std_ulogic;
     signal hblanking_temp_n : std_ulogic;
+    signal hblanking_temp : std_ulogic;
     signal reset_flipflop_data_n : std_ulogic;
 
 begin
 
     clk_signal <= clk;
-    hsync_out <= not hsync_signal;
+    hsync_n_out <= hsync_n_signal;
     hreset_out <= hreset_signal;
     hreset_n_out <= hreset_n_signal;
     hblanking <= hblanking_signal;
@@ -105,14 +116,26 @@ begin
 
     hreset_signal <= not hreset_n_signal;
 
-    hblanking_signal <= hblanking_data;
-    hblanking_n_signal <= hblanking_n_data;
-
+    --hblanking_signal <= hblanking_data;
+    --hblanking_n_signal <= hblanking_n_data;
+    --
     hblanking_temp_n <= hsync_count_reg(6) and hsync_count_reg(4);
+    hblanking_temp <= not hblanking_temp_n;
 
-    hblanking_n_data <= (not hblanking_temp_n) or (not hblanking_signal);
-    hblanking_data <= (not hreset_n_signal) or (not hblanking_n_data);
+    flipflop3 : rs_ff
+    Port map(
+        clk => clk_signal,
+        s => hreset_n_signal,
+        r => hblanking_temp,
+        Q => hblanking_signal,
+        Qnot => hblanking_n_signal
+    );
 
-    hsync_signal <= hsync_count_reg(5) nand hblanking_data;
+    --
+    --hblanking_n_data <= (not hblanking_temp_n) or (not hblanking_signal);
+    --hblanking_data <= (not hreset_n_signal) or (not hblanking_n_data);
+    --
+    hsync_signal <= hsync_count_reg(5) and hblanking_signal;
+    hsync_n_signal <= not hsync_signal;
 
 end hsync_gen;
