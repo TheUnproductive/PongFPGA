@@ -52,3 +52,11 @@ The clock for this design has to fit the required VGA clock of the original boar
 #### 3.2.4. Score Counter
 
 The score counter is a simple counter, which counts up when the ball hits the left or right wall.
+
+# 4. Inspiration
+
+The idea for this project mainly stems from the original schematic for the Pong arcade game. I have included the original schematic for the Pong arcade game in this repository and a split up schematic into different features, so that it is easier to understand what is happening.
+
+Additionally I found a very helpful documentation by Stephen A. Edwards from the Department of Computer Science at Columbia University, which I used to guid me along the project.
+
+[Documentation](documents/edwars2012reconstructing.pdf)
