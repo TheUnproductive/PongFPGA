@@ -4,7 +4,7 @@
 -- VHDL code for rising edge D flip flop 
 Library IEEE;
 USE IEEE.Std_logic_1164.all;
-
+-- Test
 entity ff_d is 
     port(
         Q : out std_ulogic;    
