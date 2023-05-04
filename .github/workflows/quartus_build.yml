@@ -28,7 +28,7 @@ jobs:
 
       - name: Test CI
         shell: bash
-        run: ls /
+        run: ls /usr/local/bin
       
       - name: Build the bitstream using quartus
         shell: bash
