@@ -29,4 +29,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build the bitstream using quartus
         shell: bash
-        run: /usr/local/bin/quartus_wrapper quartus_sh --flow compile ./quartus/PongFPGA
+        run: quartus quartus_sh --flow compile ./quartus/PongFPGA.qpf
