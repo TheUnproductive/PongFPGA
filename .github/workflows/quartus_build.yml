@@ -29,6 +29,10 @@ jobs:
       - name: Test CI
         shell: bash
         run: ls /usr/local/bin
+        
+      - name: List quartus_wrapper
+        shell: bash
+        run: /usr/local/bin/quartus_wrapper -h
       
       - name: Build the bitstream using quartus
         shell: bash
