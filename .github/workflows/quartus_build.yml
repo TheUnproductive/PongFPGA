@@ -39,8 +39,8 @@ jobs:
         
       - name: List quartus_wrapper
         shell: bash
-        run: ls /opt/intelFPGA_lite/19.1/quartus
+        run: ls /opt/intelFPGA_lite/19.1/quartus/bin
       
       - name: Build the bitstream using quartus
         shell: bash
-        run: /opt/intelFPGA_lite/19.1/quartus/quartus_sh --flow compile ./quartus/PongFPGA.qpf
+        run: /opt/intelFPGA_lite/19.1/quartus/bin/quartus_sh --flow compile ./quartus/PongFPGA.qpf
