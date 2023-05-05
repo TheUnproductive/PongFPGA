@@ -32,7 +32,7 @@ jobs:
         
       - name: List quartus_wrapper
         shell: bash
-        run: /usr/local/bin/quartus_wrapper
+        run: ls /opt/
       
       - name: Build the bitstream using quartus
         shell: bash
