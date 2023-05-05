@@ -39,7 +39,7 @@ jobs:
         
       - name: List quartus_wrapper
         shell: bash
-        run: ls /opt/intelFPGA_lite
+        run: ls /opt/intelFPGA_lite/19.1
       
       - name: Build the bitstream using quartus
         shell: bash
