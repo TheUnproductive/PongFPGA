@@ -32,4 +32,4 @@ jobs:
       
       - name: Build the bitstream using quartus
         shell: bash
-        run: quartus quartus_sh --flow compile ./quartus/PongFPGA.qpf
+        run: /usr/local/bin/quartus_wrapper quartus_sh --flow compile ./quartus/PongFPGA.qpf
